@@ -1,5 +1,25 @@
 # Python scripting feature for appleseed.studio
 
+## About the project
+Python is an easy-to-learn and easy-to-use language which is often used to automate actions with scripts and to accelerate development
+of modules, that are not sensible to perfomance. Many projects are using python to provide facilities of using project functionality
+from scripts or to extent its functionality with Python modules.  
+Appleseed can greatly benefit from using Python. With Python embeded the ability to script actions on currently opened project will appear.
+Furthermore, new functionality can be implemented with Python modules. These will lead to gain in development speed and make it easier
+to contribute to project for newcomers.  
+My goal is to integrate Python interpreter into appleseed.studio and provide API to used current project and other application data from
+scripts. Also simple script editor will be provided so users shouldn't open stand-alone text editor just to make a small change in
+script. I will also start to investigate ways of extending appleseed.studio with Python and implement a few features as a result of
+investigation.
+
+## About me
+I am Gleb Mishchenko, 3rd grade student in ITMO University, Russia. 
+I am fluent in C++ and STL and have experience in writing complex programs. I know Python as well which is very helpful for this project.
+My contacts:
+* email: gleb.mishchenko.96@gmail.com
+* phone: +7 (981) 733-51-32
+* github: https://github.com/glebmish
+
 ## Deliverables
 * Python interpreter integrated into appleseed.studio
 * C++ functions to operate on opened project
@@ -33,7 +53,7 @@ which will allow to access application data from Python scripts
 **Phase 1 evaluation. Finishing touches on implemented part**  
 Time to update build instructions, and thoroughly test new functionality  
 By the end of phase 1 two things should work:  
-  1. Python integration ...  
+  1. Python integration with ability to run Python scripts from inside the appleseed.studio
   2. Console widget with ability to execute python scripts  
 * 3 -- 7 July  
 **Write C++ functions and Python bindigs to operate on current project**  
