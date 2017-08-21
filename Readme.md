@@ -1,7 +1,7 @@
 # GSoC 2017 final report:
 ## AppleseedHQ: Python scripting feature
-### Original proposal:
-https://github.com/glebmish/GSoC-appleseed-final-code-submission/blob/master/Proposal.md
+### Original proposal
+[Python scripting feature for appleseed.studio](Proposal.md)
 ### Pre-GSoC work:
 After first contact with appleseed I fixed some bugs and implemented a small project to get familiar with people, codebase and workflow in organization. Project was to implement packaging appleseed projects to zip-based containers
 #### List of merged pull requests:
