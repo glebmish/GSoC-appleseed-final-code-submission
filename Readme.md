@@ -60,4 +60,4 @@ During all development we with mentors discussed project daily. It had a huge in
 * https://github.com/appleseedhq/appleseed/pull/1578
 * https://github.com/appleseedhq/appleseed/pull/1582
 * https://github.com/appleseedhq/appleseed/pull/1587
-* https://github.com/pulls?q=is%3Apr+author%3Aglebmish+is%3Aclosed
+* https://github.com/appleseedhq/appleseed/pull/1599
