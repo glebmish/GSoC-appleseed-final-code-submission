@@ -3,7 +3,10 @@
 ### Original proposal
 [Python scripting feature for appleseed.studio](Proposal.md)
 ### Pre-GSoC work:
-After first contact with appleseed I fixed some bugs and implemented a small project to get familiar with people, codebase and workflow in organization. Project was to implement packaging appleseed projects to zip-based containers
+https://github.com/appleseedhq/appleseed/wiki/List-of-Project-Ideas-for-GSoC-2017#project-3-single-file-zip-based-project-archives
+After first contact with appleseed I fixed some bugs and implemented a small project to get familiar with people, codebase and workflow in organization. Project was to implement packaging appleseed projects to zip-based containers with _appleseedz_ format. 
+Appleseed project is consisted of main _appleseed_ file and dependencies like textures. In _appleseed_ file all paths to dependencies are saved. Previously you would need to preserve project structure or manually change paths in _appleseed_ file to be able to open projet shared by another user. With _applessedz_ projects users can easily share their scenes because all files are stored in the archive and project structure will be the same on every computer.
+During this project I designed and implemented zip-based project format called _appleseedz_ and added ability to natively read _appleseedz_ format in all appleseed components.
 #### List of merged pull requests:
 * https://github.com/appleseedhq/appleseed/pull/1283
 * https://github.com/appleseedhq/appleseed/pull/1300
@@ -22,13 +25,12 @@ After first contact with appleseed I fixed some bugs and implemented a small pro
 * https://github.com/appleseedhq/appleseed/pull/1425
 
 ### GSoC work
-Python scripting is a useful feature for applications like appleseed as it allows to automate repetetive actions, speed up development and expand functionality with user plugins.
-To achive this goals I implemented following features:
-* Python console inside appleseed.studio
-* Python module that:
-    1. gives access to project opened in appleseed.studio
-    2. gives ability to customize appleseed.studio UI
-
+https://github.com/appleseedhq/appleseed/wiki/List-of-Project-Ideas-for-GSoC-2017#project-14-python-scripting
+My summer project was to implement and explore possible usage use cases of Python scripting for appleseed.studio. Appleseed.studio is a GUI for appleseed renderer that allows to inspect, modify and render scenes. Python scripting is a useful feature for applications like appleseed.studio as it allows to automate repetetive actions, speed up development and expand functionality with user plugins.
+As Appleseed is written in C++ it was necessary to provide Python bindings for its functionality. There already were bindings for core functionality and my task was to add bindings for studio-specific functionality like GUI project management anddirect acces to GUI Qt classes. To provide bindings I implemented new Python module containing studio-specific functions using Boost.Python library. To keep the code clean this part required quite a big amount of refactoring.
+To use Python binding we should be able execute code inside appleseed.studio. To achieve this I integrated Python interpreter inside appleseed.studio. This part also required to change cmake configuration.
+Python console widget was implemented to provide ability to write and modify Python scripts. With all its features: code highlighting, autoindentation, file management and others - I wrote a decent amount of new code in appleseed.studio and intensively used Qt framework.
+With all this done, it become possible to make use of appleseed functionality exposed to Python. Next step was to let users expand functionality themselves. It was achieved with plugins. Plugin is just a Python module with _register_ function placed in a specific directory. To give an example of how plugins can be written, I created a plugin that converts all textures in project to _tx_ format that is more effective than simple _png_ or _jpeg_ for rendering purposes. This plugin summed up all the work: it retrieves Qt classes to add menu to main window of applessed.studio, uses studio-specific and core appleseed bindings to replace old textures with converted ones and register automatically with implemented plugin system.
 During all development we with mentors discussed project daily. It had a huge influence on the process because they could guide me during implementation of every feature what made development process very productive. Also code was merged to master often giving ability all community to try new features, so I was receiving priceless feedback often and early. Thanks to many disucssions prior to GSoC and thoroughful planning of timeline all goals were met and new functionality is ready to use.
 #### List of merged pull requests:
 * https://github.com/appleseedhq/appleseed/pull/1440
