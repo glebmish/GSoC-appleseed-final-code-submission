@@ -1,5 +1,5 @@
 # GSoC 2017 final report:
-## Appleseed: Python scripting feature
+## appleseed: Python scripting feature
 ### Original proposal
 [Python scripting feature for appleseed.studio](Proposal.md)
 ### Pre-GSoC work:
@@ -7,7 +7,7 @@ https://github.com/appleseedhq/appleseed/wiki/List-of-Project-Ideas-for-GSoC-201
 
 After first contact with appleseed I fixed some bugs and implemented a small project to get familiar with people, codebase and workflow in organization. Project was to implement packaging appleseed projects to zip-based containers with _appleseedz_ format.
 
-Appleseed project is consisted of main _appleseed_ file and dependencies like textures. In _appleseed_ file all paths to dependencies are listed. Previously you would need to keep original project structure or manually change paths in _appleseed_ file to be able to open projet shared by another user. With _applessedz_ projects users can easily share their scenes because all files are stored in the archive and project structure will always be the same.
+appleseed project is consisted of main _appleseed_ file and dependencies like textures. In _appleseed_ file all paths to dependencies are listed. Previously you would need to keep original project structure or manually change paths in _appleseed_ file to be able to open projet shared by another user. With _applessedz_ projects users can easily share their scenes because all files are stored in the archive and project structure will always be the same.
 
 During this project I designed and implemented zip-based project format called _appleseedz_ and added ability to natively read and write _appleseedz_ format in all appleseed components.
 
@@ -31,9 +31,9 @@ During this project I designed and implemented zip-based project format called _
 ### GSoC work
 https://github.com/appleseedhq/appleseed/wiki/List-of-Project-Ideas-for-GSoC-2017#project-14-python-scripting
 
-My summer project was to implement and explore possible use cases of Python scripting for appleseed.studio. Appleseed.studio is a GUI for appleseed renderer that allows to inspect, modify and render scenes. Python scripting is a useful feature for applications like appleseed.studio as it allows to automate repetetive actions, speed up development and expand functionality with user plugins.
+My summer project was to implement and explore possible use cases of Python scripting for appleseed.studio. appleseed.studio is a GUI for appleseed renderer that allows to inspect, modify and render scenes. Python scripting is a useful feature for applications like appleseed.studio as it allows to automate repetetive actions, speed up development and expand functionality with user plugins.
 
-As Appleseed is written in C++ it was necessary to provide Python bindings for its functionality. There already were bindings for core functionality and my goal was to add bindings for studio-specific functionality like GUI project management and direct acces to GUI Qt classes. To provide bindings I implemented new Python module containing studio-specific functions using Boost.Python library. To keep the code clean this part required quite a lot of refactoring.
+As appleseed is written in C++ it was necessary to provide Python bindings for its functionality. There already were bindings for core functionality and my goal was to add bindings for studio-specific functionality like GUI project management and direct acces to GUI Qt classes. To provide bindings I implemented new Python module containing studio-specific functions using Boost.Python library. To keep the code clean this part required quite a lot of refactoring.
 
 To use Python binding we should be able execute code inside appleseed.studio. To achieve this I integrated Python interpreter inside appleseed.studio. This part also required to change cmake configuration.
 
