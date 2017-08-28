@@ -2,6 +2,14 @@
 ## appleseed: Python scripting feature
 ### Original proposal
 [Python scripting feature for appleseed.studio](Proposal.md)
+### Brief results
+* All goals have been met
+* Over 30 pull requests were merged
+* Got experience with
+  * Contributing to open-source product
+  * Remote work
+  * Development of C++ project with large codebase
+  * Libraries: Qt and PyQt, Boost and Boost.Python in particular
 ### Pre-GSoC work:
 https://github.com/appleseedhq/appleseed/wiki/List-of-Project-Ideas-for-GSoC-2017#project-3-single-file-zip-based-project-archives
 
@@ -42,6 +50,9 @@ Python console widget was implemented to provide ability to write and modify Pyt
 With all this done, it become possible to make use of appleseed functionality exposed to Python. Next step was to let users expand functionality. It was achieved with plugins. Plugin is just a Python module with _register_ function placed in a specific directory. To give an example of how plugins can be written, I created a plugin that converts all textures in project to _tx_ format that is more effective than simple _png_ or _jpeg_ for rendering purposes. This plugin basically sums up all the work: it retrieves Qt classes to add menu to main window of applessed.studio, uses studio-specific and core appleseed bindings to replace old textures with converted ones and registers automatically with implemented plugin system.
 
 During all development we with mentors discussed project daily. It had a huge influence on the process because they could guide me during implementation of every feature what made development process very productive. Also code was merged to master often giving whole community an ability to try new features, so I was receiving priceless feedback often and early. Thanks to many disucssions prior to GSoC and thoroughful planning of timeline all goals were met and new functionality is ready to use.
+
+### Screenshots
+![Studio Gaffer Browser](studio_gaffer_browser.png)
 
 #### List of merged pull requests (key pull requests are in bold):
 * [**#1440 Python console**](https://github.com/appleseedhq/appleseed/pull/1440)
