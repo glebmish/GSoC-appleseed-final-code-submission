@@ -54,6 +54,11 @@ With all this done, it became possible to make use of appleseed functionality ex
 During all development we with mentors discussed project daily. It had a huge influence on the process because they could guide me during implementation of every feature which made development process very productive. Also code was merged to master often giving whole community an ability to try new features, so I was receiving priceless feedback often and early. Thanks to many discussions prior to GSoC and thorough planning of timeline all goals were met and new functionality is ready to use.
 
 ### Screenshots
+* appleseed.studio main window with opened project (appleseed shaderball). In the top menu bar you can see menu entry which is added with Python plugin bundled with appleseed, at the bottom Python console is opened.
+![Studio Overview](studio_overview.png)
+* Python console in details. Some features of console are highlighted.
+![Python Console Overview](python_console_overview.png)
+* Gaffer (scene generation tool) opened in Qt widget that was created with script and inserted to appleseed.studio's main window.
 ![Studio Gaffer Browser](studio_gaffer_browser.png)
 
 #### List of merged pull requests:
