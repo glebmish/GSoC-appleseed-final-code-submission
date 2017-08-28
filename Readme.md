@@ -11,20 +11,20 @@ appleseed project is consisted of main _appleseed_ file and dependencies like te
 
 During this project I designed and implemented zip-based project format called _appleseedz_ and added ability to natively read and write _appleseedz_ format in all appleseed components.
 
-#### List of merged pull requests:
+#### List of merged pull requests (key pull requests are in bold):
 * [#1283 Explicitly set C default library locale](https://github.com/appleseedhq/appleseed/pull/1283)
-* [#1300 Open packed project](https://github.com/appleseedhq/appleseed/pull/1300)
+* [**#1300 Open packed project**](https://github.com/appleseedhq/appleseed/pull/1300)
 * [#1306 FIX: bug when valid packed project doesn't open](https://github.com/appleseedhq/appleseed/pull/1306)
 * [#1311 Add tests for unzipper and packed project](https://github.com/appleseedhq/appleseed/pull/1311)
 * [#1316 Packed project minor issues](https://github.com/appleseedhq/appleseed/pull/1316)
 * [#1320 Restore accidentally deleted parentheses](https://github.com/appleseedhq/appleseed/pull/1320)
 * [#1336 Implemented ability to open packed projects in studio](https://github.com/appleseedhq/appleseed/pull/1336)
 * [#1343 Usability changes for opening packed projects](https://github.com/appleseedhq/appleseed/pull/1343)
-* [#1345 Save packed project feature](https://github.com/appleseedhq/appleseed/pull/1345)
+* [**#1345 Save packed project feature**](https://github.com/appleseedhq/appleseed/pull/1345)
 * [#1353 Enhancements for packed projects](https://github.com/appleseedhq/appleseed/pull/1353)
 * [#1357 Add "Pack Project As..." button to menu](https://github.com/appleseedhq/appleseed/pull/1357)
 * [#1373 FIX: Change delimiter ';' on ' ' in QT file dialog filters](https://github.com/appleseedhq/appleseed/pull/1373)
-* [#1396 Implement using of packed projects as archive projects](https://github.com/appleseedhq/appleseed/pull/1396)
+* [**#1396 Implement using of packed projects as archive projects**](https://github.com/appleseedhq/appleseed/pull/1396)
 * [#1404 FIX: Changed "Pack as..." button behavior](https://github.com/appleseedhq/appleseed/pull/1404)
 * [#1425 Change relative search path on absolute one](https://github.com/appleseedhq/appleseed/pull/1425)
 
@@ -43,10 +43,10 @@ With all this done, it become possible to make use of appleseed functionality ex
 
 During all development we with mentors discussed project daily. It had a huge influence on the process because they could guide me during implementation of every feature what made development process very productive. Also code was merged to master often giving whole community an ability to try new features, so I was receiving priceless feedback often and early. Thanks to many disucssions prior to GSoC and thoroughful planning of timeline all goals were met and new functionality is ready to use.
 
-#### List of merged pull requests:
-* [#1440 Python console](https://github.com/appleseedhq/appleseed/pull/1440)
-* [#1454 Console adjustments](https://github.com/appleseedhq/appleseed/pull/1454)
-* [#1464 Studio python module #1464](https://github.com/appleseedhq/appleseed/pull/1464)
+#### List of merged pull requests (key pull requests are in bold):
+* [**#1440 Python console**](https://github.com/appleseedhq/appleseed/pull/1440)
+* [**#1454 Console adjustments**](https://github.com/appleseedhq/appleseed/pull/1454)
+* [**#1464 Studio python module**](https://github.com/appleseedhq/appleseed/pull/1464)
 * [#1493 Python console refactoring](https://github.com/appleseedhq/appleseed/pull/1493)
 * [#1498 Fix regression](https://github.com/appleseedhq/appleseed/pull/1498)
 * [#1509 Python console issues](https://github.com/appleseedhq/appleseed/pull/1509)
@@ -55,10 +55,10 @@ During all development we with mentors discussed project daily. It had a huge in
 * [#1546 Add appleseed.studio to Travis build](https://github.com/appleseedhq/appleseed/pull/1546)
 * [#1554 Studio python bugfixes](https://github.com/appleseedhq/appleseed/pull/1554)
 * [#1558 appleseed.studio module enhancements](https://github.com/appleseedhq/appleseed/pull/1558)
-* [#1569 Implemented studio.add_dock function](https://github.com/appleseedhq/appleseed/pull/1569)
+* [**#1569 Implemented studio.add_dock function**](https://github.com/appleseedhq/appleseed/pull/1569)
 * [#1572 Python modules improvements](https://github.com/appleseedhq/appleseed/pull/1572)
 * [#1578 appleseed.studio python module improvements](https://github.com/appleseedhq/appleseed/pull/1578)
-* [#1582 General texture converter implementation and function to use it in appleseed.studio](https://github.com/appleseedhq/appleseed/pull/1582)
+* [**#1582 General texture converter implementation and function to use it in appleseed.studio**](https://github.com/appleseedhq/appleseed/pull/1582)
 * [#1587 New UI helper and fixes for Python interpreter](https://github.com/appleseedhq/appleseed/pull/1587)
-* [#1599 Studio python plugins](https://github.com/appleseedhq/appleseed/pull/1599)
+* [**#1599 Studio python plugins**](https://github.com/appleseedhq/appleseed/pull/1599)
 * [#1606 Different fixes](https://github.com/appleseedhq/appleseed/pull/1606)
