@@ -9,7 +9,7 @@
   * Contributing to open-source product
   * Remote work
   * Development of C++ project with large codebase
-  * Libraries: Qt and PyQt, Boost and Boost.Python in particular
+  * Frameworks: Qt and PyQt, Boost and Boost.Python in particular
 ### Pre-GSoC work:
 https://github.com/appleseedhq/appleseed/wiki/List-of-Project-Ideas-for-GSoC-2017#project-3-single-file-zip-based-project-archives
 
